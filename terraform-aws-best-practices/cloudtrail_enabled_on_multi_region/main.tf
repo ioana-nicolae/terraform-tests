@@ -9,7 +9,7 @@ resource "aws_cloudtrail" "foobar" {
 
 resource "aws_s3_bucket" "foo" {
   bucket        = "tf-test-trail"
-  force_destroy = true
+  force_destroy = true 
 
   policy = <<POLICY
 {
