@@ -16,7 +16,7 @@ resource "aws_security_group" "default" {
   name        = "examplerulename"
   vpc_id      = aws_vpc.vpc.id
 
-  ingress {
+  ingress { 
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
