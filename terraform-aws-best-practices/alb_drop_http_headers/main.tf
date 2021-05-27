@@ -20,7 +20,7 @@ module "vpc" {
       cidr_blocks = "0.0.0.0/0"
     }]
   default_security_group_egress =[]
-}
+}  
 
 resource "aws_lb" "default" {
   internal           = false
