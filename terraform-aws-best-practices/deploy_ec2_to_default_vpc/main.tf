@@ -19,7 +19,7 @@ resource "aws_subnet" "default-subnet" {
   vpc_id     = aws_default_vpc.default.id
   cidr_block = "192.168.10.0/24"
   availability_zone = local.region
-}
+} 
 
 resource "aws_route_table" "default-route-table" {
   vpc_id = aws_default_vpc.default.id
@@ -51,3 +51,6 @@ resource "aws_instance" "t2-instance" {
   instance_type = "t2.micro"
   subnet_id = aws_subnet.default-subnet.id
 }
+
+
+
