@@ -35,11 +35,6 @@ resource "aws_security_group" "default" {
   }
 }
 
-resource "aws_subnet" "subnet" {
-  vpc_id     = aws_vpc.vpc.id
-  cidr_block = local.cidr_block
-
-}
 
 
 data "aws_ami" "ubuntu" {
