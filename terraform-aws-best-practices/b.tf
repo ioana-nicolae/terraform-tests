@@ -11,6 +11,8 @@ resource "aws_vpc" "vpc" {
 
 }
 
+
+
 resource "aws_security_group" "default" {
   name        = "examplerulename"
   vpc_id      = aws_vpc.vpc.id
