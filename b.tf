@@ -10,7 +10,7 @@ locals {
 resource "aws_vpc" "vpc" {
   cidr_block = local.cidr_block
 
-}
+} 
 
 resource "aws_security_group" "default" {
   name        = "examplerulename"
